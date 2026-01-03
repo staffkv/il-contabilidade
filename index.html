@@ -4,40 +4,275 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IL Contabilidade</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="icon" type="image/x-icon" href="./favico.ico" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <meta name="description" lang="pt-BR"
-    content="Somos especialistas em MEIs, micro e pequenas empresas, oferecendo suporte completo e transparente para facilitar a vida do empreendedor.">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <title>IL Contabilidade | Contabilidade Digital para MEI e Pequenas Empresas</title>
 
-    body {
-      font-family: 'Karla', sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color-primary);
-      line-height: 1.6;
-      overflow-x: hidden;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-  </style>
+  <!-- SEO -->
+  <meta name="description"
+    content="Contabilidade simples, eficiente e digital para MEIs e pequenas empresas. Abertura de empresa, contabilidade mensal e muito mais." />
+  <meta name="keywords" content="contabilidade, MEI, pequenas empresas, contador, contabilidade digital" />
+  <meta name="author" content="IL Contabilidade" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="IL Contabilidade | Contabilidade Digital" />
+  <meta property="og:description" content="Contabilidade simples e digital para MEIs e pequenas empresas." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ilcontabilidade.com.br" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <div>
-    <div>
-      <div>IL Contabilidade</div>
-      <div>Soluções contábeis completas para MEIs e pequenas empresas. Tudo o que você precisa em um só lugar.</div>
-    </div>
-  </div>
-</body>
 
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <div class="logo-icon">IL</div>
+        <div class="logo-text">
+          <strong>IL Contabilidade</strong>
+          <span>Contabilidade Digital</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop">
+        <a href="index.html" class="nav-link active">Início</a>
+        <a href="sobre.html" class="nav-link">Sobre Nós</a>
+        <a href="servicos.html" class="nav-link">Serviços</a>
+        <a href="planos.html" class="nav-link">Planos</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <a href="https://wa.me/5583987118322" target="_blank" class="btn-whatsapp btn-desktop">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+        Fale Conosco
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+        <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav class="nav-mobile" id="mobileNav">
+      <div class="container">
+        <a href="index.html" class="nav-link-mobile active">Início</a>
+        <a href="sobre.html" class="nav-link-mobile">Sobre Nós</a>
+        <a href="servicos.html" class="nav-link-mobile">Serviços</a>
+        <a href="planos.html" class="nav-link-mobile">Planos</a>
+        <a href="blog.html" class="nav-link-mobile">Blog</a>
+        <a href="contato.html" class="nav-link-mobile">Contato</a>
+        <a href="https://wa.me/5583987118322" target="_blank" class="btn-whatsapp btn-mobile">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          Fale Conosco
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-pattern"></div>
+    
+    <div class="container hero-container">
+      <!-- Content -->
+      <div class="hero-content">
+        <!-- Badge -->
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <span>Atendimento 100% Digital</span>
+        </div>
+
+        <!-- Heading -->
+        <h1 class="hero-title">
+          Contabilidade simples, eficiente e feita para o 
+          <span class="hero-highlight">crescimento</span> da sua empresa
+        </h1>
+
+        <!-- Description -->
+        <p class="hero-description">
+          Cuidamos da sua contabilidade para que você tenha mais tempo para focar no seu negócio.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-buttons">
+          <a href="https://wa.me/5583987118322?text=Olá! Gostaria de mais informações sobre os serviços da IL Contabilidade." 
+             target="_blank" 
+             class="btn-hero-primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+            Fale agora pelo WhatsApp
+          </a>
+          <a href="contato.html" class="btn-hero-secondary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            Solicitar orçamento gratuito
+          </a>
+        </div>
+
+        <!-- Feature Pills -->
+        <div class="hero-features">
+          <div class="feature-pill">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            100% Digital
+          </div>
+          <div class="feature-pill">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            Atendimento Rápido
+          </div>
+          <div class="feature-pill">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            Seguro e Confiável
+          </div>
+          <div class="feature-pill">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+              <polyline points="17 6 23 6 23 12"></polyline>
+            </svg>
+            Foco no seu Crescimento
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual -->
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <img src="hero-image.jpeg" alt="Iury Lourenço - Contador Especialista" class="hero-image">
+          <div class="hero-image-overlay">
+            <p class="hero-name">Iury Lourenço</p>
+            <p class="hero-role">Contador Especialista</p>
+          </div>
+        </div>
+        <div class="hero-badge-float">
+          <span>⭐ 4.9/5</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <!-- Logo & Info -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="footer-logo-icon">IL</div>
+          <div>
+            <strong>IL Contabilidade</strong>
+            <span>Contabilidade Digital</span>
+          </div>
+        </div>
+
+        <p>
+          Simplificamos a contabilidade para MEIs e pequenas empresas com tecnologia,
+          agilidade e atendimento humanizado.
+        </p>
+
+        <div class="footer-social">
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram">IG</a>
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook">FB</a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">IN</a>
+        </div>
+      </div>
+
+      <!-- Empresa -->
+      <div>
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="planos.html">Planos</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+
+      <!-- Serviços -->
+      <div>
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="servicos.html#abertura">Abertura de Empresa</a></li>
+          <li><a href="servicos.html#mei">Contabilidade MEI</a></li>
+          <li><a href="servicos.html#mensal">Contabilidade Mensal</a></li>
+          <li><a href="servicos.html#dp">Departamento Pessoal</a></li>
+          <li><a href="servicos.html#planejamento">Planejamento Tributário</a></li>
+        </ul>
+      </div>
+
+      <!-- Contato -->
+      <div>
+        <h4>Contato</h4>
+        <ul class="footer-contact">
+          <li>
+            <a href="https://wa.me/5583987118322" target="_blank">
+              📞 (83) 98711-8322
+            </a>
+          </li>
+          <li>
+            <a href="mailto:iurylourencocontabilidade@gmail.com">
+              ✉️ iurylourencocontabilidade@gmail.com
+            </a>
+          </li>
+          <li>
+            📍 Rua João Câncio, 1755, sala 201, 1º andar – Manaíra, João Pessoa – PB
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <div class="footer-legal">
+          <a href="privacidade.html">Política de Privacidade</a>
+          <a href="termos.html">Termos de Uso</a>
+          <a href="cookies.html">Política de Cookies</a>
+          <a href="lgpd.html">LGPD</a>
+        </div>
+
+        <div class="footer-copy">
+          <p>CNPJ: 57.356.337/0001-53</p>
+          <p>© 2026 IL Contabilidade. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </html>
